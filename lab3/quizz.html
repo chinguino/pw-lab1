@@ -7,38 +7,78 @@
 <body>
     <h3>Quizz</h3>
     <u1>
-        <form action="/action_page.php">
+        <form method="post" action="mailto:gfguilherme1@gmail.com">
             <fieldset>
-            <legend>Identificação:</legend>
-            <p>Nome: <input type="text" name="nome"></p>
-            <p>Apelido: <input type="text" name="idade"></p>
-            <p>Email <input type="email"
-            name="email"></p>
-            </fieldset>
-            <fieldset>
-            <legend>Quizz cidade de Lisboa: será que conhece mesmo Lisboa?</legend>
-            <p>Quando é que foi criada a Rua Cor de Rosa, no Cais do Sodré?
-            <br>
-                <select name="cais">
-                   <option value="2011">2011</option>
-                   <option value="2013">2013</option>
-                   <option value="2015">2015</option>
-                </select>
-            </br> 
-            </p>
-            <p>Em que zona da cidade fica a Câmara Municipal?</p>
-            <input type="radio" name="camera" value="sete">
-            <label for="sete">Sete Rios</label><br>
-            <input type="radio" name="camera" value="marques">
-            <label for="marques">Marquês de Pombal</label><br>
-            <input type="radio" name="camera" value="alcantara">
-            <label for="alcantara">Alcântara</label><br>
-            <input type="radio" name="camera" value="terreiro">
-            <label for="terreiro">Terreiro do Paço</label><br>
+                <legend>Identificação:</legend>
+                <p>Nome: <input type="text" name="nome" required></p>
+                <p>Apelido: <input type="text" name="idade" required></p>
+                <p>Email <input type="email"
+                name="email" required></p>
+                </fieldset>
+                <fieldset>
+                <legend>Quizz cidade de Lisboa: será que conhece mesmo Lisboa?</legend>
+                <fieldset>
+                <legend style="color: black"><b>1. Quando é que foi criada a Rua Cor de Rosa, no Cais do Sodré?</b></legend>
+                <br>
+                    <select name="cais">
+                       <option value="2011">2011</option>
+                       <option value="2013">2013</option>
+                       <option value="2015">2015</option>
+                    </select>
+                </br> 
+                </p>
+                 </fieldset>
 
-            <p> Quem criou a receita dos Pastés de Belém?
-           
+                 <fieldset>
+                <legend style="color: black"><b>2. Em que zona da cidade fica a Câmara Municipal?</b></legend>
+                <input type="radio" name="camera" value="sete">
+                <label for="sete">Sete Rios</label><br>
+                <input type="radio" name="camera" value="marques">
+                <label for="marques">Marquês de Pombal</label><br>
+                <input type="radio" name="camera" value="alcantara">
+                <label for="alcantara">Alcântara</label><br>
+                <input type="radio" name="camera" value="terreiro">
+                <label for="terreiro">Terreiro do Paço</label><br>
+                </fieldset>
+
+                <fieldset>
+                <legend style="color: black"><b>3. Quem criou a receita dos Pastés de Belém?</b></legend>
+                <p>3. Quem criou a receita dos Pastés de Belém?</p>
+                <input type="text" name="pasteis" placeholder="Insira aqui a sua resposta" ><br>
+                </fieldset>
+                
+                <fieldset>
+                 <legend style="color: black"><b>4. Em que ano foi inaugurado o Metro de Lisboa</b></legend>
+                <input type="checkbox" id="metro" name="metro" value="1949">
+                  <label for="metro"> 1949</label><br>
+                  <input type="checkbox" id="metro1" name"metro1" value="1959">
+                  <label for="metro1"> 1969</label><br>
+                  <input type="checkbox" id="metro2" name="metro3" value="1969">
+                  <label for="metro3"> 1969</label><br><br>
+                </fieldset>
+
+                <fieldset>
+                <legend style="color: black"><b>5. Quantas estações de metro existem atualmente?</b></legend>
+                <input type="range" min="40" max="60"
+                name="estacoes" value="0"
+                oninput="estacoesN.value = parseInt(estacoes.value)">
+                <output name="estacoesN" for="estacoes">40</output>
+                </fieldset>
+
+                <fieldset>
+                 <legend style="color: black"><b>6. Como se chama o monumento que vemos na imagem</b></legend>
+                <br><img src="img/padrao.jpg" alt=""><br>
+                <input type="text" id="padrao" name="padrao">
+                </fieldset>
+
+                <fieldset>
+                    <legend style="color: black"><b>7. Que cor associa à cidade de Lisboa?</b></legend>
+                    <p><b>Selecione uma cor que associe a Lisboa</b></p>
+                    <label><input type="color" name="cor"> Lisboa</label><br>
+                </fieldset>
+                <input type="submit" value="submeter">
             </fieldset>
+        </form>
     </u1>
         
 </body>
