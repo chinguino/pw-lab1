@@ -1,0 +1,30 @@
+* {
+	background-color: #fff5cc;
+	font-family: 'Oswald', sans-serif;
+}
+
+#menu:hover, #menu:hover {
+	text-decoration: underline;
+}
+
+p[target=poema] {
+	text-decoration: underline;
+
+}
+
+svg[target=tabela]{
+	background-color: green;
+}
+
+p::first-letter{
+	font-size: 2em;
+}
+
+[title~=Lisboa]:hover{
+	border: 5px solid green;
+	position: sticky;
+}
+
+input[target=input]{
+	display: inline-block;
+}

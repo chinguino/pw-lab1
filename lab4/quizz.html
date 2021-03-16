@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
     <title>PW Labs</title>
 </head>
 <body>
@@ -60,14 +61,14 @@
 
                  <fieldset>
                 <legend style="color: black"><b>2. Em que zona da cidade fica a Câmara Municipal?</b></legend>
-                <input type="radio" name="camera" value="sete">
-                <label for="sete">Sete Rios</label><br>
-                <input type="radio" name="camera" value="marques">
-                <label for="marques">Marquês de Pombal</label><br>
-                <input type="radio" name="camera" value="alcantara">
-                <label for="alcantara">Alcântara</label><br>
-                <input type="radio" name="camera" value="terreiro">
-                <label for="terreiro">Terreiro do Paço</label><br>
+                <input type="radio" name="camera" value="sete" target="input">
+                <label for="sete">Sete Rios</label>
+                <input type="radio" name="camera" value="marques" target="input">
+                <label for="marques">Marquês de Pombal</label>
+                <input type="radio" name="camera" value="alcantara" target="input">
+                <label for="alcantara">Alcântara</label>
+                <input type="radio" name="camera" value="terreiro" target="input">
+                <label for="terreiro">Terreiro do Paço</label>
                 </fieldset>
 
                 <fieldset>
@@ -79,11 +80,11 @@
                 <fieldset>
                  <legend style="color: black"><b>4. Em que ano foi inaugurado o Metro de Lisboa</b></legend>
                 <input type="checkbox" id="metro" name="metro" value="1949">
-                  <label for="metro"> 1949</label><br>
-                  <input type="checkbox" id="metro1" name"metro1" value="1959">
-                  <label for="metro1"> 1969</label><br>
-                  <input type="checkbox" id="metro2" name="metro3" value="1969">
-                  <label for="metro3"> 1969</label><br><br>
+                  <label for="metro"> 1949</label>
+                  <input type="checkbox" id="metro1" name"metro1" value="1959" target="input">
+                  <label for="metro1"> 1969</label>
+                  <input type="checkbox" id="metro2" name="metro3" value="1969" target="input">
+                  <label for="metro3"> 1969</label>
                 </fieldset>
 
                 <fieldset>
@@ -96,7 +97,7 @@
 
                 <fieldset>
                  <legend style="color: black"><b>6. Como se chama o monumento que vemos na imagem</b></legend>
-                <br><img src="img/padrao.jpg" alt=""><br>
+                <br><img src="img/padrao.jpg" alt="" title="Lisboa"><br>
                 <input type="text" id="padrao" name="padrao">
                 </fieldset>
 
@@ -105,7 +106,7 @@
                     <p><b>Selecione uma cor que associe a Lisboa</b></p>
                     <label><input type="color" name="cor"> Lisboa</label><br>
                 </fieldset>
-                <input type="submit" value="submeter">
+                <input type="submit" value="submeter" >
             </fieldset>
         </form>
     </u1>
