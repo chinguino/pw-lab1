@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>PW Labs</title>
+     <h3>Quizz</h3>
+</header>
+<body>
+ <nav>
+        <section>
+            <svg height="60" width="200" id="menu">
+              <a href="index.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Introdução</text>
+            </svg>
+           <svg height="60" width="200" id="menu">
+              <a href="local.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(120 0)">Localização</text>
+            </svg>
+           <svg height="60" width="200" id="menu">
+              <a href="multimedia.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(120 0)">
+              <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" fill="freeze" />
+              Multimedia
+              </text>
+            </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="info.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(30 20,40)">
+              <animate id="a1" attributeName="fill" from="white" to="red" dur="10s" fill="freeze" />
+              Informações</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="../index.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              Home</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="quizz.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              Quizz</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="comentarios.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              Comentarios</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="html5-css.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              HTML5 e CSS</text>
+          </svg>
+      </section>
+    </nav>
+    <main>
+    <u1>
+        <form method="post" action="mailto:gfguilherme1@gmail.com">
+            <fieldset>
+                <legend>Identificação:</legend>
+                <p>Nome: <input type="text" name="nome" required></p>
+                <p>Apelido: <input type="text" name="idade" required></p>
+                <p>Email <input type="email"
+                name="email" required></p>
+                </fieldset>
+                <fieldset>
+                <legend>Quizz cidade de Lisboa: será que conhece mesmo Lisboa?</legend>
+                <fieldset>
+                <legend style="color: black"><b>1. Quando é que foi criada a Rua Cor de Rosa, no Cais do Sodré?</b></legend>
+                <br>
+                    <select name="cais">
+                       <option value="2011">2011</option>
+                       <option value="2013">2013</option>
+                       <option value="2015">2015</option>
+                    </select>
+                </br> 
+                </p>
+                 </fieldset>
+
+                 <fieldset>
+                <legend style="color: black"><b>2. Em que zona da cidade fica a Câmara Municipal?</b></legend>
+                <input type="radio" name="camera" value="sete" target="input">
+                <label for="sete">Sete Rios</label>
+                <input type="radio" name="camera" value="marques" target="input">
+                <label for="marques">Marquês de Pombal</label>
+                <input type="radio" name="camera" value="alcantara" target="input">
+                <label for="alcantara">Alcântara</label>
+                <input type="radio" name="camera" value="terreiro" target="input">
+                <label for="terreiro">Terreiro do Paço</label>
+                </fieldset>
+
+                <fieldset>
+                <legend style="color: black"><b>3. Quem criou a receita dos Pastés de Belém?</b></legend>
+                <p>3. Quem criou a receita dos Pastés de Belém?</p>
+                <input type="text" name="pasteis" placeholder="Insira aqui a sua resposta" ><br>
+                </fieldset>
+                
+                <fieldset>
+                 <legend style="color: black"><b>4. Em que ano foi inaugurado o Metro de Lisboa</b></legend>
+                <input type="checkbox" id="metro" name="metro" value="1949">
+                  <label for="metro"> 1949</label>
+                  <input type="checkbox" id="metro1" name"metro1" value="1959" target="input">
+                  <label for="metro1"> 1969</label>
+                  <input type="checkbox" id="metro2" name="metro3" value="1969" target="input">
+                  <label for="metro3"> 1969</label>
+                </fieldset>
+
+                <fieldset>
+                <legend style="color: black"><b>5. Quantas estações de metro existem atualmente?</b></legend>
+                <input type="range" min="40" max="60"
+                name="estacoes" value="0"
+                oninput="estacoesN.value = parseInt(estacoes.value)">
+                <output name="estacoesN" for="estacoes">40</output>
+                </fieldset>
+
+                <fieldset>
+                 <legend style="color: black"><b>6. Como se chama o monumento que vemos na imagem</b></legend>
+                <br><img src="img/padrao.jpg" alt="" title="Lisboa"><br>
+                <input type="text" id="padrao" name="padrao">
+                </fieldset>
+
+                <fieldset>
+                    <legend style="color: black"><b>7. Que cor associa à cidade de Lisboa?</b></legend>
+                    <p><b>Selecione uma cor que associe a Lisboa</b></p>
+                    <label><input type="color" name="cor"> Lisboa</label><br>
+                </fieldset>
+                <input type="submit" value="submeter" >
+            </fieldset>
+        </form>
+    </u1>
+    </main>
+    <aside>
+    </aside>
+</body>
+<footer>
+  <p>Nome: Guilherme Franco Nº: a21801945 Universidade Lusófona de Humanidades e Tecnologias 2020/2021</p>
+</footer>
+</html>

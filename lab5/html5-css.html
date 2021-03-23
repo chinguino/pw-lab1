@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<header>
+    <link rel="shortcut icon" type="img/x-icon" href="img/mike.ico"/>
+    <meta charset="utf-8" />
+    <meta name="author" content="Guilherme Franco">
+    <meta name="keywords" content="palavras chave">
+    <meta name="description" content="Website sobre Lisboa">
+    <link rel="stylesheet" href="estilos.css">
+    <title></title>
+    <h3> HTML5 e CSS </h3>
+</header>
+<body>
+ <nav>
+        <section>
+            <svg height="60" width="200" id="menu">
+              <a href="index.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Introdução</text>
+            </svg>
+           <svg height="60" width="200" id="menu">
+              <a href="local.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(120 0)">Localização</text>
+            </svg>
+           <svg height="60" width="200" id="menu">
+              <a href="multimedia.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(120 0)">
+              <animate id="a1" attributeName="fill" from="red" to="blue" dur="10s" fill="freeze" />
+              Multimedia
+              </text>
+            </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="info.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(30 20,40)">
+              <animate id="a1" attributeName="fill" from="white" to="red" dur="10s" fill="freeze" />
+              Informações</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="../index.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              Home</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="quizz.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              Quizz</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="comentarios.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              Comentarios</text>
+          </svg>
+          <svg height="60" width="200" id="menu">
+              <a href="html5-css.html" target="_blank">
+              <text x="0" y="15" fill="red" transform="rotate(180 0)">
+              <animate id="a1" attributeName="fill" from="purple" to="black" dur="10s" fill="freeze" />
+              HTML5 e CSS</text>
+          </svg>
+      </section>
+    </nav>
+    <main>
+     <h2> HTML5 </h2>
+    <section>
+    <p>HTML5 é a última evolução no padrão que define o HTML. O termo representa dois conceitos diferentes. Esta é uma nova versão da linguagem HTML, com novos elementos, atributos e comportamentos, e um conjunto maior de tecnologias que permite a criação de sites e aplicações da Web mais diversos e poderosos. Este conjunto às vezes é chamado de HTML5 e amigos e, muitas vezes, abreviado apenas para HTML5.</p>
+    <table border="1" cellpadding="10%" bgcolor="#fff2e6">
+            <thead>
+                <caption>
+                   
+                </caption>
+            </thead>
+            <tr>
+                <th>Elementos</th>
+                <th>Usei ou não?</th>
+                <th>Onde utilizei?</th>
+            </tr>
+            <tbody>
+            <tr> 
+                <td> header</td>
+                <td> <svg width="25" height="25" target="tabela">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg> </td>
+                <td> indica cabeçalho
+(normalmente com logotipos). </td>
+            </tr>
+            <tr>
+                <td>nav</td>
+                <td><svg width="25" height="25" target="tabela">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg></td>
+                <td>indica menu de navegação
+com links para as páginas
+(só deve haver um por página)</td>
+            </tr>
+            <tr>
+                <td> main </td>
+                <td> <svg width="25" height="25" target="tabela">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg> </td>
+                <td> indica conteúdo principal e
+único, que não se repete.
+ </td>
+            </tr>
+            <tr> 
+                <td> section </td>
+                <td> <svg width="25" height="25" target="tabela">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg>
+            </td> 
+                <td> especifica uma parte do conteúdo, usada em conjunto
+com etiquetas h1|h2|… </td> 
+            </tr> 
+            <tr> 
+                <td> footer </td>
+                <td> <svg width="25" height="25" target="tabela">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> indica rodapé da secção (com copyright). </td> 
+            </tr>
+             <tr> 
+                <td> arcticle </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> indica porção do
+documento que pode ser vista de forma independente </td> 
+            </tr>
+             <tr> 
+                <td> aside </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> indica anotações, publicidade ou outros assuntos
+desconexos. </td> 
+            </tr>
+             <tr> 
+                <td> details </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> define detalhes adicionais que o utilizador
+pode ver ou esconder, contidos num elemento summary </td> 
+            </tr>
+             <tr> 
+                <td> meter </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> define uma medida escalar estática dentro de um
+intervalo </td> 
+            </tr>
+             <tr> 
+                <td> progress </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> define uma barra de progresso de uma tarefa </td> 
+            </tr>
+             <tr> 
+                <td> abbr </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> indica o significado de uma abreviatura em conjunto
+com o atributo title </td> 
+            </tr>
+             <tr> 
+                <td> address </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td> 
+                <td> informação sobre o contacto do autor </td> 
+            </tr> 
+            </tbody>
+        </table>
+
+
+
+    </section>
+
+    <section>
+     <h2> CSS </h2>
+    <p>É um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) a um documento web</p>
+    <table border="1" cellpadding="10%" bgcolor="#fff2e6">
+            <thead>
+                <caption>
+                   
+                </caption>
+            </thead>
+            <tr>
+                <th>Elementos</th>
+                <th>Usei ou não?</th>
+                <th>Onde utilizei?</th>
+            </tr>
+            <tbody>
+            <tr> 
+                <td> div p</td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td>
+                <td> div p – todos os p que estão “dentro” de um div
+ </td>
+            </tr>
+            <tr>
+                <td>div > p </td>
+                <td><svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg></td>
+                <td>div > p – todos os p que estão “logo dentro” de div</td>
+            </tr>
+            <tr>
+                <td> div ~ p </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg> </td>
+                <td> div ~ p – todos os p que estão colocados depois de um div
+ </td>
+            </tr>
+            <tr> 
+                <td> div + p  </td>
+                <td> <svg width="25" height="25">
+            <image href="img/wrong.png" width="100%" height="100%">
+            </image>
+            </svg>
+            </td> 
+                <td> div + p – todos os p que estão colocados “imediatamente” depois de um div </td> 
+            </tr>
+             <tr> 
+                <td> grid-template-rows  </td>
+                <td> <svg width="25" height="25">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg>
+            </td> 
+                <td>No website todo   </td> 
+            </tr>
+             <tr> 
+                <td> grid-template-columns  </td>
+                <td> <svg width="25" height="25">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg>
+            </td> 
+                <td>No website todo   </td> 
+            </tr>
+             <tr> 
+                <td> grid-template-areas  </td>
+                <td> <svg width="25" height="25">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg>
+            </td> 
+                <td>No website todo  </td> 
+            </tr>
+            <tr> 
+                <td> @keyframes  </td>
+                <td> <svg width="25" height="25">
+            <image href="img/check.png" width="100%" height="100%">
+            </image>
+            </svg>
+            </td> 
+                <td>Na galeria de fotos (todas as fotos têm animações) e na página de introdução  </td> 
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    </main>
+    <aside>
+    </aside>
+</body>
+<footer>
+  <p>Nome: Guilherme Franco Nº: a21801945 Universidade Lusófona de Humanidades e Tecnologias 2020/2021</p>
+</footer>
+</html>
